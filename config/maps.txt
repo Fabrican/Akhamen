@@ -14,7 +14,6 @@ Format:
 endmap
 
 map blackstone
-	default
 	#voteweight 1.5
 	minplayers 100
 	votable
