@@ -14,8 +14,8 @@
 #define DEVILRESURRECTTIME 600
 
 GLOBAL_LIST_EMPTY(allDevils)
-GLOBAL_LIST_INIT(lawlorify, list (
-		LORE = list(
+GLOBAL_LIST_INIT(lawlorify, alist (
+		LORE = alist(
 			OBLIGATION_FOOD = "This devil seems to always offer its victims food before slaughtering them.",
 			OBLIGATION_FIDDLE = "This devil will never turn down a musical challenge.",
 			OBLIGATION_DANCEOFF = "This devil will never turn down a dance off.",
@@ -46,7 +46,7 @@ GLOBAL_LIST_INIT(lawlorify, list (
 			BANISH_DESTRUCTION = "Its corpse must be utterly destroyed to prevent resurrection.",
 			BANISH_FUNERAL_GARB = "If clad in funeral garments, this devil will be unable to resurrect.  Should the clothes not fit, lay them gently on top of the devil's corpse."
 		),
-		LAW = list(
+		LAW = alist(
 			OBLIGATION_FOOD = "When not acting in self defense, you must always offer my victim food before harming them.",
 			OBLIGATION_FIDDLE = "When not in immediate danger, if you are challenged to a musical duel, you must accept it.  You are not obligated to duel the same person twice.",
 			OBLIGATION_DANCEOFF = "When not in immediate danger, if you are challenged to a dance off, you must accept it. You are not obligated to face off with the same person twice.",
@@ -80,10 +80,10 @@ GLOBAL_LIST_INIT(lawlorify, list (
 	))
 
 //These are also used in the codex gigas, so let's declare them globally.
-GLOBAL_LIST_INIT(devil_pre_title, list("Dark ", "Hellish ", "Fallen ", "Fiery ", "Sinful ", "Blood ", "Fluffy "))
-GLOBAL_LIST_INIT(devil_title, list("Lord ", "Prelate ", "Count ", "Viscount ", "Vizier ", "Elder ", "Adept "))
-GLOBAL_LIST_INIT(devil_syllable, list("hal", "ve", "odr", "neit", "ci", "quon", "mya", "folth", "wren", "geyr", "hil", "niet", "twou", "phi", "coa"))
-GLOBAL_LIST_INIT(devil_suffix, list(" the Red", " the Soulless", " the Master", ", the Lord of all things", ", Jr."))
+GLOBAL_LIST_INIT(devil_pre_title, alist("Dark ", "Hellish ", "Fallen ", "Fiery ", "Sinful ", "Blood ", "Fluffy "))
+GLOBAL_LIST_INIT(devil_title, alist("Lord ", "Prelate ", "Count ", "Viscount ", "Vizier ", "Elder ", "Adept "))
+GLOBAL_LIST_INIT(devil_syllable, alist("hal", "ve", "odr", "neit", "ci", "quon", "mya", "folth", "wren", "geyr", "hil", "niet", "twou", "phi", "coa"))
+GLOBAL_LIST_INIT(devil_suffix, alist(" the Red", " the Soulless", " the Master", ", the Lord of all things", ", Jr."))
 /datum/antagonist/devil
 	name = "Devil"
 	roundend_category = "devils"
@@ -99,7 +99,7 @@ GLOBAL_LIST_INIT(devil_suffix, list(" the Red", " the Soulless", " the Master", 
 	var/list/datum/mind/soulsOwned = new
 	var/reviveNumber = 0
 	var/form = BASIC_DEVIL
-	var/static/list/devil_spells = typecacheof(list(
+	var/static/list/devil_spells = typecacheof(alist(
 		/obj/effect/proc_holder/spell/aimed/fireball/hellish,
 		/obj/effect/proc_holder/spell/targeted/conjure_item/summon_pitchfork,
 		/obj/effect/proc_holder/spell/targeted/conjure_item/summon_pitchfork/greater,

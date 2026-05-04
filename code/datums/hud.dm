@@ -3,7 +3,7 @@
 GLOBAL_LIST_EMPTY(all_huds)
 
 //GLOBAL HUD LIST
-GLOBAL_LIST_INIT(huds, list(
+GLOBAL_LIST_INIT(huds, alist(
 	DATA_HUD_SECURITY_BASIC = new/datum/atom_hud/data/human/security/basic(),
 	DATA_HUD_SECURITY_ADVANCED = new/datum/atom_hud/data/human/security/advanced(),
 	DATA_HUD_MEDICAL_BASIC = new/datum/atom_hud/data/human/medical/basic(),
@@ -30,7 +30,7 @@ GLOBAL_LIST_INIT(huds, list(
 	ANTAG_HUD_FUGITIVE = new/datum/atom_hud/antag(),
 	ANTAG_HUD_VAMPIRE = new/datum/atom_hud/antag(),
 	ANTAG_HUD_WEREWOLF = new/datum/atom_hud/antag(),
-	
+
 	ROGUE_HUD_MARRIED = new/datum/atom_hud/antag()
 	))
 
