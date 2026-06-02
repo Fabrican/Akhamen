@@ -223,7 +223,7 @@
 		GLOB.fires_list -= src
 
 /obj/machinery/light/rogue/Destroy()
-	QDEL_NULL(soundloop)	
+	QDEL_NULL(soundloop)
 	GLOB.fires_list -= src
 	. = ..()
 
@@ -331,7 +331,7 @@
 
 /obj/machinery/light/rogue/break_light_tube(skip_sound_and_sparks = 0)
 	if(status == LIGHT_EMPTY || status == LIGHT_BROKEN)
-		return	
+		return
 	if(!skip_sound_and_sparks)
 		if(status == LIGHT_OK || status == LIGHT_BURNED)
 			playsound(src.loc, 'sound/blank.ogg', 75, TRUE)
@@ -466,7 +466,7 @@
 		if(WEST)
 			pixel_x = -32
 	. = ..()
-	
+
 /obj/machinery/light/rogue/wallfire/candle/attack_hand(mob/user)
 	if(isliving(user) && on)
 		user.visible_message(span_warning("[user] snuffs [src]."))
@@ -679,7 +679,7 @@
 					return
 		else if(istype(attachment, /obj/item/reagent_containers/glass/pot))
 			var/obj/item/reagent_containers/glass/pot = attachment
-			if(W.type in subtypesof(/obj/item/reagent_containers/food/snacks) || W.type == /obj/item/reagent_containers/powder/flour) 
+			if(W.type in subtypesof(/obj/item/reagent_containers/food/snacks) || W.type == /obj/item/reagent_containers/powder/flour)
 				if(pot.reagents.chem_temp < 374)
 					to_chat(user, span_warning("[pot] isn't boiling!"))
 					return
@@ -784,7 +784,7 @@
 		burn_out()
 
 /obj/machinery/light/rogue/hearth/Destroy()
-	QDEL_NULL(boilloop)	
+	QDEL_NULL(boilloop)
 	. = ..()
 
 /obj/machinery/light/rogue/campfire
