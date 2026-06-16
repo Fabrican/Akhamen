@@ -24,7 +24,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	display_order = JDO_LORD
 	tutorial = "Elevated upon your throne through a web of intrigue and political upheaval, you are the absolute authority of these lands and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error in their ways."
 	whitelist_req = FALSE
-	min_pq = 5
+	min_pq = -4
 	max_pq = null
 	give_bank_account = 1000
 	required = TRUE
@@ -66,12 +66,12 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	l_hand = /obj/item/rogueweapon/lordscepter
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1)
-	id = /obj/item/clothing/ring/active/nomag	
+	id = /obj/item/clothing/ring/active/nomag
 	if(H.gender == MALE)
 		pants = /obj/item/clothing/under/roguetown/tights/black
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
-		shoes = /obj/item/clothing/shoes/roguetown/boots	
+		shoes = /obj/item/clothing/shoes/roguetown/boots
 		if(H.mind)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
