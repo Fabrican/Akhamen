@@ -553,8 +553,8 @@
 	var/dat = {"
 		<A href='byond://?src=\ref[src];c_mode=1'>Change Game Mode</A><br>
 		"}
-	if(master_mode == "Secret")
-		dat += "<A href='byond://?src=\ref[src];f_secret=1'>Force Secret Mode</A><br>"
+//	if(master_mode == "Secret")
+//		dat += "<A href='byond://?src=\ref[src];f_secret=1'>Force Secret Mode</A><br>"
 
 	dat += {"
 		<BR>
