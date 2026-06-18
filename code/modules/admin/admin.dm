@@ -223,7 +223,7 @@
 
 	if(!check_rights())
 		return
-	
+
 	if(!M.ckey)
 		to_chat(src, span_warning("There is no ckey attached to this mob."))
 		return
@@ -237,7 +237,7 @@
 
 	if(!check_rights())
 		return
-	
+
 	var/S = M.IsSleeping()
 	if(S)
 		M.remove_status_effect(S)
@@ -271,7 +271,7 @@
 
 	if(!check_rights())
 		return
-	
+
 	if(!M.ckey)
 		to_chat(src, span_warning("There is no ckey attached to this mob."))
 		return
@@ -501,7 +501,7 @@
 	usr << browse(dat, "window=admincaster_main;size=400x600")
 	onclose(usr, "admincaster_main")
 
-
+/*
 /datum/admins/proc/Game()
 	if(!check_rights(0))
 		return
@@ -546,7 +546,32 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////admins2.dm merge
 //i.e. buttons/verbs
+*/
+/datum/admins/proc/Game()
+	if(!check_rights(0))	return
 
+	var/dat = {"
+		<A href='byond://?src=\ref[src];c_mode=1'>Change Game Mode</A><br>
+		"}
+	if(master_mode == "Secret")
+		dat += "<A href='byond://?src=\ref[src];f_secret=1'>Force Secret Mode</A><br>"
+
+	dat += {"
+		<BR>
+		<A href='byond://?src=\ref[src];show_raspect=1'>Show Round Aspect</A><br>
+		<A href='byond://?src=\ref[src];create_object=1'>Create Object</A><br>
+		<A href='byond://?src=\ref[src];quick_create_object=1'>Quick Create Object</A><br>
+		<A href='byond://?src=\ref[src];create_turf=1'>Create Turf</A><br>
+		<A href='byond://?src=\ref[src];create_mob=1'>Create Mob</A><br>
+		<br><A href='byond://?src=\ref[src];vsc=airflow'>Edit Airflow Settings</A><br>
+		<A href='byond://?src=\ref[src];vsc=phoron'>Edit Phoron Settings</A><br>
+		<A href='byond://?src=\ref[src];vsc=default'>Choose a default ZAS setting</A><br>
+		"}
+
+	var/datum/browser/popup = new(usr, "admin2", "Game Panel", 210, 280)
+	popup.set_content(dat)
+	popup.open()
+	return
 
 /datum/admins/proc/restart()
 	set category = "Server"
@@ -688,7 +713,7 @@
 						[usr.key] has forced the gamemode.</font>")
 					return
 				SSticker.manualmodes |= choice
-				roguegamemodes -= choice		
+				roguegamemodes -= choice
 	else
 		to_chat(usr, "<font color='red'>Error: Force Modes: Game has already started.</font>")
 
