@@ -192,7 +192,7 @@
 	misscost = 20
 	unarmed = TRUE
 	animname = "cut"
-	pointer = 'icons/effects/mousemice/human_kick.dmi'
+//	pointer = 'icons/effects/mousemice/human_kick.dmi'
 
 /datum/intent/bite
 	name = "bite"
@@ -212,7 +212,7 @@
 	chargedrain = 0
 	chargetime = 0
 	noaa = TRUE
-	pointer = 'icons/effects/mousemice/human_jump.dmi'
+//	pointer = 'icons/effects/mousemice/human_jump.dmi'
 
 /datum/intent/steal
 	name = "steal"
@@ -229,7 +229,7 @@
 	chargedrain = 0
 	chargetime = 0
 	noaa = TRUE
-	pointer = 'icons/effects/mousemice/human_give.dmi'
+//	pointer = 'icons/effects/mousemice/human_give.dmi'
 
 /datum/intent/spell
 	name = "spell"
