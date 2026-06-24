@@ -72,8 +72,8 @@
 //		mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
 		return
 
-	if (mouse_down_icon)
-		mouse_pointer_icon = mouse_down_icon
+//	if (mouse_down_icon)
+//		mouse_pointer_icon = mouse_down_icon
 	var/delay = mob.CanMobAutoclick(object, location, params)
 
 	mob.atkswinging = null
@@ -133,13 +133,13 @@
 				var/obj/effect/proc_holder/spell/S = mob.ranged_ability
 				if(!S.cast_check(TRUE,mob))
 					return
-		if(!mob.mmb_intent)
-			mouse_pointer_icon = 'icons/effects/mousemice/human_looking.dmi'
-		else
-			if(mob.mmb_intent.get_chargetime() && !AD.blockscharging)
-				updateprogbar()
-			else
-				mouse_pointer_icon = mob.mmb_intent.pointer
+//		if(!mob.mmb_intent)
+//			mouse_pointer_icon = 'icons/effects/mousemice/human_looking.dmi'
+//		else
+//			if(mob.mmb_intent.get_chargetime() && !AD.blockscharging)
+//				updateprogbar()
+//			else
+//				mouse_pointer_icon = mob.mmb_intent.pointer
 		return
 	if (L["left"]) //start charging a lmb intent
 		mob.face_atom(object, location, control, params)
@@ -200,9 +200,9 @@
 //		mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
 		return
 
-	if (mouse_up_icon)
-		mouse_pointer_icon = mouse_up_icon
-	selected_target[1] = null
+//	if (mouse_up_icon)
+//		mouse_pointer_icon = mouse_up_icon
+//	selected_target[1] = null
 
 //	var/list/L = params2list(params)
 
