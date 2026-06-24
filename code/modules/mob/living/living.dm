@@ -52,8 +52,8 @@
 
 /mob/living/onZImpact(turf/T, levels)
 	if(HAS_TRAIT(src, TRAIT_NOFALLDAMAGE1))
-		if(levels <= 2)	
-			return 
+		if(levels <= 2)
+			return
 	var/points
 	for(var/i in 2 to levels)
 		i++
@@ -373,7 +373,7 @@
 //		else
 //			if(!supress_message)
 //				AM.visible_message(span_danger("[src] has pulled [AM] from [AM.pulledby]'s grip."), span_danger("[src] has pulled me from [AM.pulledby]'s grip."), null, null, src)
-//								
+//
 //				to_chat(src, span_notice("I pull [AM] from [AM.pulledby]'s grip!"))
 //			log_combat(AM, AM.pulledby, "pulled from", src)
 //			AM.pulledby.stop_pulling() //an object can't be pulled by two mobs at once.
@@ -1052,7 +1052,7 @@
 		client.charging = 0
 		client.chargedprog = 0
 		client.tcompare = null //so we don't shoot the attack off
-		client.mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
+//		client.mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
 	if(used_intent)
 		used_intent.on_mouse_up()
 	if(mmb_intent)
@@ -1077,13 +1077,13 @@
 		wrestling_diff += (mind.get_skill_level(/datum/skill/combat/wrestling)) //NPCs don't use this
 	if(L.mind)
 		wrestling_diff -= (L.mind.get_skill_level(/datum/skill/combat/wrestling))
-	
+
 	resist_chance += ((STASTR - L.STASTR) * 10)
-	
+
 	if(!(mobility_flags & MOBILITY_STAND))
-		resist_chance += -20 + min((wrestling_diff * 5), -20) //Can improve resist chance at high skill difference     
+		resist_chance += -20 + min((wrestling_diff * 5), -20) //Can improve resist chance at high skill difference
 	if(pulledby.grab_state >= GRAB_AGGRESSIVE)
-		resist_chance += -20 + max((wrestling_diff * 10), 0) 
+		resist_chance += -20 + max((wrestling_diff * 10), 0)
 		resist_chance = max(resist_chance, 50 + min((wrestling_diff * 5), 0))
 	else
 		resist_chance = max(resist_chance, 70 + min((wrestling_diff * 5), 0))
@@ -1199,7 +1199,7 @@
 	if(check_arm_grabbed(active_hand_index))
 		to_chat(src, span_warning("Someone is grabbing my arm!"))
 		return
-	
+
 	if(istype(src, /mob/living/carbon/spirit))
 		to_chat(src, span_warning("Your hands pass right through \the [what]!"))
 		return
