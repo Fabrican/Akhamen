@@ -25,7 +25,7 @@
 	var/tranged = 0
 	var/noaa = FALSE //turns off auto aiming, also turns off the 'swooshes'
 	var/warnie = ""
-	var/pointer = 'icons/effects/mousemice/human_attack.dmi'
+//	var/pointer = 'icons/effects/mousemice/human_attack.dmi'
 	var/clickcd = CLICK_CD_MELEE //the cd invoked clicking on stuff with this intent
 	var/recovery = 0		//RTD unable to move for this duration after an attack without becoming off balance
 	var/list/charge_invocation //list of stuff to say while charging

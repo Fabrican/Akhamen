@@ -69,7 +69,7 @@
 	if(mob.stat != CONSCIOUS)
 		mob.atkswinging = null
 		charging = null
-		mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
+//		mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
 		return
 
 	if (mouse_down_icon)
@@ -117,12 +117,12 @@
 			mob.used_intent = mob.o_intent
 			if(mob.used_intent.get_chargetime() && !AD.blockscharging && !mob.in_throw_mode)
 				updateprogbar()
-			else
-				mouse_pointer_icon = 'icons/effects/mousemice/human_attack.dmi'
+//			else
+//				mouse_pointer_icon = 'icons/effects/mousemice/human_attack.dmi'
 			return
-		else
-			mouse_pointer_icon = 'icons/effects/mousemice/human_looking.dmi'
-			return
+//		else
+//			mouse_pointer_icon = 'icons/effects/mousemice/human_looking.dmi'
+//			return
 	if (L["middle"]) //start charging a spell or readying a mmb intent
 		if(mob.next_move > world.time)
 			return
@@ -155,8 +155,8 @@
 		mob.used_intent = mob.a_intent
 		if(mob.used_intent.get_chargetime() && !AD.blockscharging && !mob.in_throw_mode)
 			updateprogbar()
-		else
-			mouse_pointer_icon = 'icons/effects/mousemice/human_attack.dmi'
+//		else
+//			mouse_pointer_icon = 'icons/effects/mousemice/human_attack.dmi'
 		return
 
 /mob
@@ -166,7 +166,7 @@
 	charging = 0
 //	mob.update_warning()
 
-	mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
+//	mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
 
 	if(mob.curplaying)
 		mob.curplaying.on_mouse_up()
@@ -197,7 +197,7 @@
 		chargedprog = 0
 		mob.atkswinging = null
 //		mob.update_warning()
-		mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
+//		mouse_pointer_icon = 'icons/effects/mousemice/human.dmi'
 		return
 
 	if (mouse_up_icon)
@@ -247,7 +247,7 @@
 		lastplayed = 0
 		doneset = 0
 		chargedprog = 0
-		mouse_pointer_icon = 'icons/effects/mousemice/swang/acharging.dmi'
+//		mouse_pointer_icon = 'icons/effects/mousemice/swang/acharging.dmi'
 		START_PROCESSING(SSmousecharge, src)
 
 /client/Destroy()
@@ -285,7 +285,7 @@
 					playsound(L, 'sound/magic/charged.ogg', 100, TRUE)
 					L.curplaying.on_mouse_up()
 				chargedprog = 100
-				mouse_pointer_icon = 'icons/effects/mousemice/swang/acharged.dmi'
+//				mouse_pointer_icon = 'icons/effects/mousemice/swang/acharged.dmi'
 			else
 				if(!L.rogfat_add(L.used_intent.chargedrain))
 					L.stop_attack()
