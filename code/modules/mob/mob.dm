@@ -785,7 +785,7 @@ GLOBAL_VAR_INIT(mobids, 1)
 			GLOB.cameranet.stat_entry()
 		if(statpanel("Tickets"))
 			GLOB.ahelp_tickets.stat_entry()
-			
+
 		if(length(GLOB.sdql2_queries))
 			if(statpanel("SDQL2"))
 				stat("Access Global SDQL2 List", GLOB.sdql2_vv_statobj)
@@ -1159,9 +1159,9 @@ GLOBAL_VAR_INIT(mobids, 1)
 /mob/proc/update_mouse_pointer()
 	if (!client)
 		return
-	if(!client.charging && !atkswinging)
-		if(examine_cursor_icon && client.keys_held["Shift"]) //mouse shit is hardcoded, make this non hard-coded once we make mouse modifiers bindable
-			client.mouse_pointer_icon = examine_cursor_icon
+//	if(!client.charging && !atkswinging)
+//		if(examine_cursor_icon && client.keys_held["Shift"]) //mouse shit is hardcoded, make this non hard-coded once we make mouse modifiers bindable
+//			client.mouse_pointer_icon = examine_cursor_icon
 	else if (ismecha(loc))
 		var/obj/mecha/M = loc
 		if(M.mouse_pointer)
