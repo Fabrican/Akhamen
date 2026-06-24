@@ -124,7 +124,7 @@
 	if(world.time < lastclick + 3 SECONDS)
 		return
 	lastclick = world.time
-	
+
 	if(ishuman(usr))
 		var/mob/living/carbon/human/H = usr
 		if(modifiers["right"])
@@ -854,7 +854,7 @@
 		if(isliving(hud.mymob))
 			var/mob/living/L = hud.mymob
 			L.look_around()
-	
+
 /atom/movable/screen/eye_intent/update_icon_state()
 	. = ..()
 	var/mob/living/L = hud.mymob
@@ -1902,8 +1902,8 @@
 	layer = HUD_LAYER+0.1
 
 /atom/movable/screen/grain
-	icon = 'icons/grain.dmi'
-	icon_state = "grain"
+//	icon = 'icons/grain.dmi'
+//	icon_state = "grain"
 	name = ""
 	screen_loc = "1,1"
 	mouse_opacity = 0
