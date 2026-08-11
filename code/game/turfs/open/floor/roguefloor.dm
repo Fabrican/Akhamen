@@ -140,7 +140,7 @@
 
 /turf/open/floor/rogue/grass
 	name = "grass"
-	desc = "Grass, sodden with mud and bogwater." 
+	desc = "Grass, sodden with mud and bogwater."
 	icon_state = "grass"
 	layer = MID_TURF_LAYER
 	footstep = FOOTSTEP_GRASS
@@ -461,6 +461,8 @@
 
 /turf/open/floor/rogue/blocks/stonered
 	icon_state = "stoneredlarge"
+/turf/open/floor/rogue/blocks/stonedeco
+	icon_state = "weird2"
 /turf/open/floor/rogue/blocks/stonered/tiny
 	icon_state = "stoneredtiny"
 /turf/open/floor/rogue/blocks/green

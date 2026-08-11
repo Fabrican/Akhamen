@@ -57,7 +57,9 @@
 /turf/closed/wall/mineral/rogue/stone/window/moss
 	icon = 'icons/turf/walls/mossy_stone.dmi'
 	climbdiff = 4
-
+/turf/closed/wall/mineral/rogue/stone/akhwall
+	icon = 'icons/turf/roguewall.dmi'
+	icon_state = "akhwall"
 /turf/closed/wall/mineral/rogue/craftstone
 	name = "stone wall"
 	desc = "A durable wall made from specially crafted stone."
