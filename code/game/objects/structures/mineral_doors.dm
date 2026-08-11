@@ -641,6 +641,10 @@
 	desc = ""
 	over_state = "fancy_woodopen"
 
+/obj/structure/mineral_door/wood/akhfancydoor
+	icon_state = "akh_wood"
+	over_state = "akh_woodopen"
+
 /obj/structure/mineral_door/wood/deadbolt
 	desc = "This door comes with a deadbolt."
 	icon_state = "wooddir"
