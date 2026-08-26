@@ -157,7 +157,7 @@ window "outputwindow"
 window "statwindow"
 	elem "statwindow"
 		type = MAIN
-		pos = 0,0
+		pos = 291,0
 		size = 640x480
 		anchor1 = -1,-1
 		anchor2 = -1,-1
@@ -165,6 +165,10 @@ window "statwindow"
 		background-color = #000000
 		saved-params = "pos;size"
 		is-pane = true
+		outer-size = 656x538
+		outer-pos = 291,0
+		inner-pos = 8,31
+		screen-size = 1920x1040
 	elem "stat"
 		type = INFO
 		pos = 0,0
@@ -173,7 +177,6 @@ window "statwindow"
 		anchor2 = 100,100
 		font-family = "Pterra"
 		font-size = 12
-		font-style = "6"
 		text-color = #d6dbd5
 		background-color = #000000
 		is-default = true
