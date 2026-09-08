@@ -448,6 +448,7 @@
 	name = "candles"
 	icon_state = "wallcandle1"
 	base_state = "wallcandle"
+	bulb_colour = "#ffffff"
 	crossfire = FALSE
 	cookonme = FALSE
 	pixel_y = 32

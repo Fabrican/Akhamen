@@ -60,6 +60,9 @@
 /turf/closed/wall/mineral/rogue/stone/akhwall
 	icon = 'icons/turf/roguewall.dmi'
 	icon_state = "akhwall"
+/turf/closed/wall/mineral/rogue/stone/grimwall
+	icon = 'icons/turf/roguewall.dmi'
+	icon_state = "brickstone"
 /turf/closed/wall/mineral/rogue/craftstone
 	name = "stone wall"
 	desc = "A durable wall made from specially crafted stone."
