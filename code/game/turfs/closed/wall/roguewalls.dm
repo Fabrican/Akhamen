@@ -60,6 +60,12 @@
 /turf/closed/wall/mineral/rogue/stone/akhwall
 	icon = 'icons/turf/roguewall.dmi'
 	icon_state = "akhwall"
+/turf/closed/wall/mineral/rogue/stone/rustwall
+	icon = 'icons/turf/roguewall.dmi'
+	icon_state = "rust_w1"
+/turf/closed/wall/mineral/rogue/stone/rustwall_r
+	icon = 'icons/turf/roguewall.dmi'
+	icon_state = "rust_w2"
 /turf/closed/wall/mineral/rogue/stone/grimwall
 	icon = 'icons/turf/roguewall.dmi'
 	icon_state = "brickstone"

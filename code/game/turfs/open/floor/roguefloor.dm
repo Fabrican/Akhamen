@@ -473,6 +473,10 @@
 	icon_state = "newstone2"
 /turf/open/floor/rogue/blocks/newstone/alt
 	icon_state = "bluestone"
+/turf/open/floor/rogue/blocks/newfloor
+	icon_state = "newfloor"
+/turf/open/floor/rogue/blocks/newfloor2
+	icon_state = "newfloor2"
 
 /turf/open/floor/rogue/blocks/paving
 	icon_state = "paving"
