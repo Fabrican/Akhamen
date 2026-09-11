@@ -509,7 +509,9 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/indoors/town/vault
 	name = "vault"
 	icon_state = "vault"
-
+	droning_sound = list('sound/music/area/dustareallherbeauties.ogg','sound/music/area/thegreatorderofthings.ogg')
+	droning_sound_dusk = null
+	droning_sound_night = null
 /area/rogue/indoors/town/vault/can_craft_here()
 	return FALSE
 
